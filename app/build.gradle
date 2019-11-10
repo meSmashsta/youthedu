@@ -27,9 +27,12 @@ android {
 
 def arrow_version = "0.10.2"
 def lifecycle_version = "2.1.0"
+def fragment_version = "1.1.0"
 dependencies {
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    implementation "androidx.fragment:fragment-testing:$fragment_version"
     implementation 'androidx.core:core-ktx:1.1.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "io.arrow-kt:arrow-fx:$arrow_version"
