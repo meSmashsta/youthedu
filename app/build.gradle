@@ -28,7 +28,12 @@ android {
 def arrow_version = "0.10.2"
 def lifecycle_version = "2.1.0"
 def fragment_version = "1.1.0"
+def dagger_version = "2.25.2"
 dependencies {
+    api "com.google.dagger:dagger-android:$dagger_version"
+    api "com.google.dagger:dagger-android-support:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
